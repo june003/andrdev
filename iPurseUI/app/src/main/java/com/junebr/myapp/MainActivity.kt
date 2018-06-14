@@ -16,10 +16,7 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.icu.text.SimpleDateFormat
 import android.os.Environment
-import android.os.Environment.DIRECTORY_PICTURES
-import java.io.File
-import java.io.IOException
-import java.util.*
+
 import org.tensorflow.contrib.android.TensorFlowInferenceInterface
 
 
