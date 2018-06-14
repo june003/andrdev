@@ -1,4 +1,4 @@
-package com.junebr.myapp
+package com.junebr.iPurser
 
 import android.app.Activity
 import android.os.Bundle

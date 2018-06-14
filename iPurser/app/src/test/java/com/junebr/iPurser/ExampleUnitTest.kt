@@ -1,4 +1,4 @@
-package com.junebr.myapp
+package com.junebr.iPurser
 
 import org.junit.Test
 
