@@ -7,10 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-//import com.junebr.R
-//import com.junebr.MnistClassifier
-import com.junebr.mnist.R
-import kotlinx.android.synthetic.main.activity_main.*  // .item_classifier.view.*
 import kotlinx.android.synthetic.main.content_main.view.*
 
 
@@ -21,13 +17,13 @@ class ClassifierAdapter(listOfClassifiers: List<MnistClassifier>) : RecyclerView
     private val classifiers: List<ClassifierViewModel> = listOfClassifiers.map { ClassifierViewModel(it.name, 0, it) }
 
     override fun onCreateViewHolder(@NonNull parent: ViewGroup, viewType: Int): ClassifierViewHolder {
-        val itemView = LayoutInflater.from(parent?.context).inflate(R.layout.content_main, parent, false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.content_main, parent, false)
         return ClassifierViewHolder(itemView)
     }
 
     override fun onBindViewHolder(@NonNull holder: ClassifierViewHolder, position: Int) {
         val vm = classifiers[position]
-        holder?.let {
+        holder.let {
             it.classifierName.text = vm.name
             it.classifierResult.text = vm.result.toString()
         }
@@ -41,7 +37,6 @@ class ClassifierAdapter(listOfClassifiers: List<MnistClassifier>) : RecyclerView
             notifyItemChanged(index)
         }
     }
-
 }
 
 
