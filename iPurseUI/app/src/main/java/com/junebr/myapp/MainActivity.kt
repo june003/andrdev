@@ -20,6 +20,7 @@ import android.os.Environment.DIRECTORY_PICTURES
 import java.io.File
 import java.io.IOException
 import java.util.*
+import org.tensorflow.contrib.android.TensorFlowInferenceInterface
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
