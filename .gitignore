@@ -1,0 +1,16 @@
+
+
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.iml
+.idea/
+.eclipse
+
+.vscode
+
+.settings/
+
+Thumbs.db
