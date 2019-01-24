@@ -70,7 +70,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_camera -> {
                 // Handle the camera action
                 dispatchTakePictureIntent()
-
             }
             R.id.nav_gallery -> {
 
