@@ -1,0 +1,25 @@
+1. install Nodejs
+2. Install Express.js : 
+    npm install -g express
+3. Installing Express
+    cd /home/jlei/
+    npm install express --save   
+    npm install body-parser --save
+    npm install cookie-parser --save
+    npm install multer --save
+4. Express.js App Example
+    file: express_example.js
+
+    var express = require('express');  
+    var app = express();  
+    app.get('/', function (req, res) {  
+        res.send('Welcome to JavaTpoint');  
+    })  
+    var server = app.listen(8000, function () {  
+        var host = server.address().address  
+        var port = server.address().port  
+        console.log("Example app listening at http://%s:%s", host, port)  
+    })  
+
+5. node basic_express.js
+7. http://127.0.0.1:8000
