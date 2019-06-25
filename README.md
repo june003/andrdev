@@ -1,2 +1,2 @@
 # andrdev
-android app develop with machine learning model
+android app development with machine learning model
