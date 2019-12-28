@@ -10,13 +10,24 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        val lawyerFee = findViewById<TextView>(R.id.lawyer_fee_id)
+        lawyerFee.text = "2.500"
     }
 
     fun sendMessage(view: View) {
-        //var opt = this.findViewById<>()
+        updatePrice()
+    }
 
+    private fun updatePrice() {
         val totalPrice = findViewById<TextView>(R.id.total_price_id)
         val total = totalPrice.text.toString().toDouble()
+
+        if(total < 400) {
+            totalPrice.text = "400"
+            return
+        }
 
         val opt = findViewById<TextView>(R.id.opt_id);
         opt.text = (total * 0.05).toString()
@@ -25,22 +36,19 @@ class MainActivity : AppCompatActivity() {
         afterOpt.text = (total * 0.15).toString()
 
         val stampDuty = findViewById<TextView>(R.id.stamp_duty_id)
-        if (total > 100.0) {
-            stampDuty.text = (total*0.04 - 1.5400).toString()
+        if (total > 1000.0) {
+            stampDuty.text = (total*0.04 - 15.400).toString()
         }
         else {
-            stampDuty.text = (total*0.03 - 0.5400).toString()
+            stampDuty.text = (total*0.03 - 5.400).toString()
         }
 
         val lawyerFee = findViewById<TextView>(R.id.lawyer_fee_id)
-        lawyerFee.text = "0.2500"
-
 
         val all = findViewById<TextView>(R.id.all_id)
         all.text = (total*0.28 + lawyerFee.text.toString().toDouble()).toString()
+
     }
-
-
 }
 
 

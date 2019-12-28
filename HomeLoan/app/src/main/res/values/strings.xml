@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">House Loan Calculation</string>
     <string name="calculate">Calculate</string>
-    <string name="total_price_labal">Total Price(SGD)</string>
+    <string name="total_price_labal">Total Price(K SGD)</string>
     <string name="total_price">0</string>
     <string name="otp">OTP(5%):</string>
     <string name="otp_after_8_weeks">8 Weeks after OTP:</string>
